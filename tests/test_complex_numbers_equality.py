@@ -32,3 +32,8 @@ class TestComplexNumbersEquality(unittest.TestCase):
         complex_number_2 = ComplexNumber(-2, 4)
 
         assert complex_number_1 != complex_number_2
+
+        complex_number_1 = ComplexNumber(2, 4)
+        complex_number_2 = ComplexNumber(2, -4)
+
+        assert complex_number_1 != complex_number_2
