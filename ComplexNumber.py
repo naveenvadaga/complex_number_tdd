@@ -1,3 +1,3 @@
 class ComplexNumber:
     def __init__(self, real, imaginary):
-        pass
+        self.real = 1
