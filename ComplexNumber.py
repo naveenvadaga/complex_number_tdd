@@ -8,4 +8,4 @@ class ComplexNumber:
 
     def __add__(self, other):
         real_part = self.real + other.real
-        return ComplexNumber(real_part, 0)
+        return ComplexNumber(real_part, 2)
