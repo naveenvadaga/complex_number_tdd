@@ -13,4 +13,5 @@ class ComplexNumber:
 
     def __sub__(self, other):
         real_part = self.real - other.real
-        return ComplexNumber(real_part, 7)
+        imaginary_part = self.imaginary - other.imaginary
+        return ComplexNumber(real_part, imaginary_part)
