@@ -50,3 +50,9 @@ class TestComplexNumbersEquality(unittest.TestCase):
         complex_number_three = complex_number_one + complex_number_two
 
         assert complex_number_three.real == 11
+
+        complex_number_one = ComplexNumber(10, 2)
+        complex_number_two = ComplexNumber(1, 0)
+        complex_number_three = complex_number_one + complex_number_two
+
+        assert complex_number_three.imaginary == 2
