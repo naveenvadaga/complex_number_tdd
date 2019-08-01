@@ -1,0 +1,2 @@
+class ComplexNumber:
+    pass

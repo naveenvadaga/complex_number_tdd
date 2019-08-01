@@ -1,4 +1,5 @@
 import unittest
+from ComplexNumber import ComplexNumber
 
 
 class TestComplexNumbersEquality(unittest.TestCase):
