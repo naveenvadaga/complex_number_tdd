@@ -18,4 +18,6 @@ class ComplexNumber:
 
     def __mul__(self, other):
         real_part = self.real * other.real - self.imaginary * other.imaginary
-        return ComplexNumber(real_part, 0)
+        imaginary_part = self.real * other.imaginary + \
+                         other.real * self.imaginary
+        return ComplexNumber(real_part, imaginary_part)
