@@ -81,3 +81,9 @@ class TestComplexNumbersEquality(unittest.TestCase):
         complex_number_three = complex_number_one - complex_number_two
 
         assert complex_number_three.imaginary == 7
+
+        complex_number_one = ComplexNumber(10, 18)
+        complex_number_two = ComplexNumber(5, 5)
+        complex_number_three = complex_number_one - complex_number_two
+
+        assert complex_number_three.imaginary == 13
