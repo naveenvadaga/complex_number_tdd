@@ -37,3 +37,10 @@ class TestComplexNumbersEquality(unittest.TestCase):
         complex_number_2 = ComplexNumber(2, -4)
 
         assert complex_number_1 != complex_number_2
+
+    def test_complex_numbers_addition(self):
+        complex_number_one = ComplexNumber(0, 2)
+        complex_number_two = ComplexNumber(1, 0)
+        complex_number_three = complex_number_one + complex_number_two
+
+        assert complex_number_three.real == 1
