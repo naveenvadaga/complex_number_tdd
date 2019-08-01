@@ -7,4 +7,5 @@ class ComplexNumber:
         return self.real == other.real and self.imaginary == other.imaginary
 
     def __add__(self, other):
-        return ComplexNumber(1,0)
+        real_part = self.real + other.real
+        return ComplexNumber(real_part, 0)
