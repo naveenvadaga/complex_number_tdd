@@ -15,3 +15,6 @@ class ComplexNumber:
         real_part = self.real - other.real
         imaginary_part = self.imaginary - other.imaginary
         return ComplexNumber(real_part, imaginary_part)
+
+    def __mul__(self, other):
+        return None
