@@ -7,3 +7,5 @@ class TestComplexNumbersEquality(unittest.TestCase):
         real_part = 1
         imaginary_part = 10
         assert ComplexNumber(real_part, imaginary_part).real == real_part
+        assert ComplexNumber(real_part,
+                             imaginary_part).imaginary == imaginary_part
