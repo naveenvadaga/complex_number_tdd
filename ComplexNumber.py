@@ -4,4 +4,4 @@ class ComplexNumber:
         self.imaginary = imaginary
 
     def __eq__(self, other):
-        return True
+        return self.real == other.real
