@@ -21,3 +21,9 @@ class TestComplexNumbersEquality(unittest.TestCase):
         assert ComplexNumber(real_part, imaginary_part).real == real_part
         assert ComplexNumber(real_part,
                              imaginary_part).imaginary == imaginary_part
+
+    def test_two_complex_numbers_equality(self):
+        complex_number_1 = ComplexNumber(1, 2)
+        complex_number_2 = ComplexNumber(1, 2)
+
+        assert complex_number_1 == complex_number_2
