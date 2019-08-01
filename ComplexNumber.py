@@ -17,5 +17,5 @@ class ComplexNumber:
         return ComplexNumber(real_part, imaginary_part)
 
     def __mul__(self, other):
-        real_part = self.real * other.real
+        real_part = self.real * other.real - self.imaginary * other.imaginary
         return ComplexNumber(real_part, 0)
