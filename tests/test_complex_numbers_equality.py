@@ -87,3 +87,10 @@ class TestComplexNumbersEquality(unittest.TestCase):
         complex_number_three = complex_number_one - complex_number_two
 
         assert complex_number_three.imaginary == 13
+
+    def test_complex_numbers_multiplication(self):
+        complex_number_one = ComplexNumber(2, 0)
+        complex_number_two = ComplexNumber(1, 0)
+        complex_number_three = complex_number_one * complex_number_two
+
+        assert complex_number_three.real == 2
