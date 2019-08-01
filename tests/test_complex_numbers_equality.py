@@ -62,3 +62,10 @@ class TestComplexNumbersEquality(unittest.TestCase):
         complex_number_three = complex_number_one + complex_number_two
 
         assert complex_number_three.imaginary == 12
+
+    def test_complex_numbers_subtraction(self):
+        complex_number_one = ComplexNumber(10, 2)
+        complex_number_two = ComplexNumber(1, 0)
+        complex_number_three = complex_number_one - complex_number_two
+
+        assert complex_number_three.real == 9
