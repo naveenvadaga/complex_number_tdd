@@ -107,3 +107,17 @@ class TestComplexNumbersEquality(unittest.TestCase):
 
         assert complex_number_three.imaginary == 0
         assert complex_number_three.real == -2
+
+        complex_number_one = ComplexNumber(0, 2)
+        complex_number_two = ComplexNumber(0, 1)
+        complex_number_three = complex_number_one * complex_number_two
+
+        assert complex_number_three.imaginary == 0
+        assert complex_number_three.real == -2
+
+        complex_number_one = ComplexNumber(5, 1)
+        complex_number_two = ComplexNumber(2, 3)
+        complex_number_three = complex_number_one * complex_number_two
+
+        assert complex_number_three.imaginary == 17
+        assert complex_number_three.real == 7
