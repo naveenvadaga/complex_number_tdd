@@ -34,11 +34,6 @@ class ComplexNumber:
         return ComplexNumber(real_part, imaginary_part)
 
     def __abs__(self):
-        if self.imaginary == 0:
-            return self.real
-        elif self.real == 0:
-            return self.imaginary
-        else:
-            import math
-            return math.sqrt(
-                self.real * self.real + self.imaginary * self.imaginary)
+        import math
+        return math.sqrt(
+            self.real ** 2 + self.imaginary ** 2)
