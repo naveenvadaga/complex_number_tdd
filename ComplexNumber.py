@@ -32,3 +32,6 @@ class ComplexNumber:
         real_part = numerator.real / denominator
         imaginary_part = numerator.imaginary / denominator
         return ComplexNumber(real_part, imaginary_part)
+
+    def __abs__(self):
+        pass
