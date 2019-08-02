@@ -200,3 +200,8 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(2, 0)
 
         assert abs(complex_number_one) == 2
+
+    def test_complex_number_absolute_imaginary_part(self):
+        complex_number_one = ComplexNumber(0, 1)
+
+        assert abs(complex_number_one) == 1
