@@ -156,3 +156,8 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(2, 0)
         conjugated_complex_number = complex_number_one.conjugate()
         assert conjugated_complex_number.real == 2
+
+    def test_complex_number_conjugate_imaginary_part(self):
+        complex_number_one = ComplexNumber(0, 2)
+        conjugated_complex_number = complex_number_one.conjugate()
+        assert conjugated_complex_number.imaginary == -2
