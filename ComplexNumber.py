@@ -34,4 +34,7 @@ class ComplexNumber:
         return ComplexNumber(real_part, imaginary_part)
 
     def __abs__(self):
-        return self.real
+        if self.imaginary == 0:
+            return self.real
+        elif self.real == 0:
+            return 1
