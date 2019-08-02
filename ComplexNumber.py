@@ -39,4 +39,4 @@ class ComplexNumber:
             self.real ** 2 + self.imaginary ** 2)
 
     def phase(self):
-        pass
+        return 0
