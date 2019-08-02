@@ -39,4 +39,6 @@ class ComplexNumber:
         elif self.real == 0:
             return self.imaginary
         else:
-            return 1.4142135623730951
+            import math
+            return math.sqrt(
+                self.real * self.real + self.imaginary * self.imaginary)
