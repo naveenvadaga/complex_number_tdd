@@ -148,5 +148,7 @@ class TestComplexNumbers(unittest.TestCase):
 
         assert complex_number_three.real == 3
 
-
-
+    def test_complex_number_conjugate_real_part(self):
+        complex_number_one = ComplexNumber(1, 0)
+        conjugated_complex_nmumber = complex_number_one.conjugate()
+        assert conjugated_complex_nmumber.real == 1
