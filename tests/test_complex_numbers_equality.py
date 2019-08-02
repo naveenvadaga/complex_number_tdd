@@ -191,3 +191,8 @@ class TestComplexNumbers(unittest.TestCase):
 
         assert complex_number_three.real == 1.4
         assert complex_number_three.imaginary == 1.8
+
+    def test_complex_number_absolute_real_part(self):
+        complex_number_one = ComplexNumber(1, 0)
+
+        assert abs(complex_number_one) == 1
