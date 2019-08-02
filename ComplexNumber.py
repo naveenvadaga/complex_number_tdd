@@ -23,7 +23,7 @@ class ComplexNumber:
         return ComplexNumber(real_part, imaginary_part)
 
     def conjugate(self):
-        return None
+        return ComplexNumber(1, 0)
 
     def __truediv__(self, other):
         if self.imaginary == 0 and other.imaginary == 0:
