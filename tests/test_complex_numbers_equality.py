@@ -152,3 +152,7 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(1, 0)
         conjugated_complex_nmumber = complex_number_one.conjugate()
         assert conjugated_complex_nmumber.real == 1
+
+        complex_number_one = ComplexNumber(2, 0)
+        conjugated_complex_number = complex_number_one.conjugate()
+        assert conjugated_complex_number.real == 2
