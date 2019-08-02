@@ -176,3 +176,11 @@ class TestComplexNumbers(unittest.TestCase):
         conjugated_complex_number = complex_number_one.conjugate()
         assert conjugated_complex_number.imaginary == -4
         assert conjugated_complex_number.real == 3
+
+    def test_complex_number_division_both_parts(self):
+        complex_number_one = ComplexNumber(1, 2)
+        complex_number_two = ComplexNumber(1, 2)
+        complex_number_three = complex_number_one / complex_number_two
+
+        assert complex_number_three.real == 1
+        assert complex_number_three.imaginary == 0
