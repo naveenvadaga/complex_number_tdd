@@ -214,3 +214,7 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(1, 1)
 
         assert abs(complex_number_one) == 1.4142135623730951
+
+        complex_number_one = ComplexNumber(3, 4)
+
+        assert abs(complex_number_one) == 5
