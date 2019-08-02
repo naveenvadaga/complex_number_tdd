@@ -39,7 +39,10 @@ class ComplexNumber:
             self.real ** 2 + self.imaginary ** 2)
 
     def phase(self):
-        if self.real < 0:
-            return 3.141592653589793
-        else:
-            return 0
+        if self.imaginary == 0:
+            if self.real < 0:
+                return 3.141592653589793
+            else:
+                return 0
+        elif self.real == 0:
+            return 1.5707963267948966
