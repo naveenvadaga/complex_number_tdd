@@ -26,16 +26,9 @@ class ComplexNumber:
         return ComplexNumber(self.real, -self.imaginary)
 
     def __truediv__(self, other):
-        if self.imaginary == 0 and other.imaginary == 0:
-            real_part = self.real / other.real
-            return ComplexNumber(real_part, 0)
-        if self.real == 0 and other.real == 0:
-            real_part = self.imaginary / other.imaginary
-            return ComplexNumber(real_part, 0)
-        else:
-            conjugate = other.conjugate()
-            numerator = self * conjugate
-            denominator = (other * conjugate).real
-            real_part = numerator.real / denominator
-            imaginary_part = numerator.imaginary / denominator
-            return ComplexNumber(real_part, imaginary_part)
+        conjugate = other.conjugate()
+        numerator = self * conjugate
+        denominator = (other * conjugate).real
+        real_part = numerator.real / denominator
+        imaginary_part = numerator.imaginary / denominator
+        return ComplexNumber(real_part, imaginary_part)
