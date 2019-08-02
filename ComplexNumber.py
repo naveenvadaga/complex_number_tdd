@@ -28,7 +28,7 @@ class ComplexNumber:
         elif self.real == 0:
             return ComplexNumber(0, - self.imaginary)
         else:
-            return ComplexNumber(1,-2)
+            return ComplexNumber(self.real, -self.imaginary)
 
     def __truediv__(self, other):
         if self.imaginary == 0 and other.imaginary == 0:
@@ -37,4 +37,3 @@ class ComplexNumber:
         if self.real == 0 and other.real == 0:
             real_part = self.imaginary / other.imaginary
             return ComplexNumber(real_part, 0)
-
