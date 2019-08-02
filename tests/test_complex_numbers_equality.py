@@ -184,3 +184,10 @@ class TestComplexNumbers(unittest.TestCase):
 
         assert complex_number_three.real == 1
         assert complex_number_three.imaginary == 0
+
+        complex_number_one = ComplexNumber(1, 5)
+        complex_number_two = ComplexNumber(2, 1)
+        complex_number_three = complex_number_one / complex_number_two
+
+        assert complex_number_three.real == 1.4
+        assert complex_number_three.imaginary == 1.8
