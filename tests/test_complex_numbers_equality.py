@@ -209,3 +209,8 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(0, 2)
 
         assert abs(complex_number_one) == 2
+
+    def test_complex_number_absolute_both_parts(self):
+        complex_number_one = ComplexNumber(1, 1)
+
+        assert abs(complex_number_one) == 1.4142135623730951
