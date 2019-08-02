@@ -2,7 +2,7 @@ import unittest
 from ComplexNumber import ComplexNumber
 
 
-class TestComplexNumbersEquality(unittest.TestCase):
+class TestComplexNumbers(unittest.TestCase):
     def test_complex_numbers_initialization(self):
         real_part = 1
         imaginary_part = 10
