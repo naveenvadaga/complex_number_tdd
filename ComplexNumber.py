@@ -21,3 +21,6 @@ class ComplexNumber:
         imaginary_part = self.real * other.imaginary + \
                          other.real * self.imaginary
         return ComplexNumber(real_part, imaginary_part)
+
+    def __truediv__(self, other):
+        return None
