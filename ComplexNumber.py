@@ -33,4 +33,9 @@ class ComplexNumber:
             real_part = self.imaginary / other.imaginary
             return ComplexNumber(real_part, 0)
         else:
-            return ComplexNumber(1,0)
+            conjugate = other.conjugate()
+            numerator = self * conjugate
+            denominator = (other * conjugate).real
+            real_part = numerator.real / denominator
+            imaginary_part = numerator.imaginary / denominator
+            return ComplexNumber(real_part, imaginary_part)
