@@ -121,3 +121,10 @@ class TestComplexNumbers(unittest.TestCase):
 
         assert complex_number_three.imaginary == 17
         assert complex_number_three.real == 7
+
+    def test_complex_number_real_part_division(self):
+        complex_number_one = ComplexNumber(2, 0)
+        complex_number_two = ComplexNumber(1, 0)
+        complex_number_three = complex_number_one / complex_number_two
+
+        assert complex_number_three.real == 2
