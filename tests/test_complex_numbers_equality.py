@@ -218,3 +218,8 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(3, 4)
 
         assert abs(complex_number_one) == 5
+
+    def test_complex_number_phase_real_part(self):
+        complex_number_one = ComplexNumber(1, 0)
+
+        assert complex_number_one.phase() == 0
