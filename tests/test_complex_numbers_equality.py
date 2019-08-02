@@ -205,3 +205,7 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(0, 1)
 
         assert abs(complex_number_one) == 1
+
+        complex_number_one = ComplexNumber(0, 2)
+
+        assert abs(complex_number_one) == 2
