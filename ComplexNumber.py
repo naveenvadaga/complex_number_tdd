@@ -45,4 +45,7 @@ class ComplexNumber:
             else:
                 return 0
         elif self.real == 0:
-            return 1.5707963267948966
+            if self.imaginary > 0:
+                return 1.5707963267948966
+            elif self.imaginary < 0:
+                return -1.5707963267948966
