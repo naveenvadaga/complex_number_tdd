@@ -223,3 +223,7 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(1, 0)
 
         assert complex_number_one.phase() == 0
+
+        complex_number_one = ComplexNumber(-1, 0)
+
+        assert complex_number_one.phase() == 3.141592653589793
