@@ -32,3 +32,5 @@ class ComplexNumber:
         if self.real == 0 and other.real == 0:
             real_part = self.imaginary / other.imaginary
             return ComplexNumber(real_part, 0)
+        else:
+            return ComplexNumber(1,0)
