@@ -27,4 +27,5 @@ class ComplexNumber:
             real_part = self.real / other.real
             return ComplexNumber(real_part, 0)
         if self.real == 0 and other.real == 0:
-            return ComplexNumber(2, 0)
+            real_part = self.imaginary / other.imaginary
+            return ComplexNumber(real_part, 0)
