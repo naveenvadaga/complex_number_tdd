@@ -142,3 +142,8 @@ class TestComplexNumbers(unittest.TestCase):
 
         assert complex_number_three.real == 2
 
+        complex_number_one = ComplexNumber(0, 6)
+        complex_number_two = ComplexNumber(0, 2)
+        complex_number_three = complex_number_one / complex_number_two
+
+        assert complex_number_three.real == 3
