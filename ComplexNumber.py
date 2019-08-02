@@ -22,6 +22,9 @@ class ComplexNumber:
                          other.real * self.imaginary
         return ComplexNumber(real_part, imaginary_part)
 
+    def conjugate(self):
+        return None
+
     def __truediv__(self, other):
         if self.imaginary == 0 and other.imaginary == 0:
             real_part = self.real / other.real
