@@ -227,3 +227,8 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(-1, 0)
 
         assert complex_number_one.phase() == 3.141592653589793
+
+    def test_complex_number_phase_imaginary_part(self):
+        complex_number_one = ComplexNumber(0, 1)
+
+        assert complex_number_one.phase() == 1.5707963267948966
