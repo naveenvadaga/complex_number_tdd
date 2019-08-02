@@ -37,3 +37,6 @@ class ComplexNumber:
         import math
         return math.sqrt(
             self.real ** 2 + self.imaginary ** 2)
+
+    def phase(self):
+        pass
