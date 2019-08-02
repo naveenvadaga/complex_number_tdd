@@ -37,4 +37,4 @@ class ComplexNumber:
         if self.imaginary == 0:
             return self.real
         elif self.real == 0:
-            return 1
+            return self.imaginary
