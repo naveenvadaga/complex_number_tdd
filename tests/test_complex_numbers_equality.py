@@ -248,3 +248,8 @@ class TestComplexNumbers(unittest.TestCase):
 
         complex_number_one = ComplexNumber(1, 2)
         assert complex_number_one.phase() == 1.1071487177940904
+
+    def test_complex_number_polar_real_part(self):
+        complex_number_one = ComplexNumber(1, 0)
+
+        assert complex_number_one.polar() == (1, 0)
