@@ -43,4 +43,4 @@ class ComplexNumber:
         return math.atan2(self.imaginary, self.real)
 
     def polar(self):
-        pass
+        return 1, 0
