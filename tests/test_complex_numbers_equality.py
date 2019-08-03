@@ -253,3 +253,7 @@ class TestComplexNumbers(unittest.TestCase):
         complex_number_one = ComplexNumber(1, 0)
 
         assert complex_number_one.polar() == (1, 0)
+
+        complex_number_one = ComplexNumber(-2, 0)
+
+        assert complex_number_one.polar() == (2, 3.141592653589793)
