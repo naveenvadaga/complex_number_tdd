@@ -57,4 +57,8 @@ class ComplexNumber:
             else:
                 return modulas, -1.5707963267948966
         else:
-            return 1.4142135623730951, 0.7853981633974483
+            modulas = math.sqrt(
+                self.real * self.real + self.imaginary * self.imaginary)
+            phase = math.atan2(self.imaginary, self.real)
+
+            return modulas, phase
