@@ -56,3 +56,5 @@ class ComplexNumber:
                 return modulas, 1.5707963267948966
             else:
                 return modulas, -1.5707963267948966
+        else:
+            return 1.4142135623730951, 0.7853981633974483
