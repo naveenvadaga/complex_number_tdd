@@ -43,11 +43,14 @@ class ComplexNumber:
         return math.atan2(self.imaginary, self.real)
 
     def polar(self):
-        if self.real < 0:
-            import math
-            modulas = math.sqrt(self.real * self.real)
-            return modulas, 3.141592653589793
-        else:
-            import math
-            modulas = math.sqrt(self.real * self.real)
-            return modulas, 0
+        if self.imaginary == 0:
+            if self.real < 0:
+                import math
+                modulas = math.sqrt(self.real * self.real)
+                return modulas, 3.141592653589793
+            else:
+                import math
+                modulas = math.sqrt(self.real * self.real)
+                return modulas, 0
+        elif self.real == 0:
+            return 1, 1.5707963267948966
