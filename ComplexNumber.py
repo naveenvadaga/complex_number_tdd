@@ -41,3 +41,6 @@ class ComplexNumber:
     def phase(self):
         import math
         return math.atan2(self.imaginary, self.real)
+
+    def polar(self):
+        pass
