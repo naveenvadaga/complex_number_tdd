@@ -50,4 +50,5 @@ class ComplexNumber:
             elif self.imaginary < 0:
                 return -1.5707963267948966
         else:
-            return 0.7853981633974483
+            import math
+            return math.atan2(self.imaginary, self.real)
