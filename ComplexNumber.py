@@ -53,4 +53,11 @@ class ComplexNumber:
                 modulas = math.sqrt(self.real * self.real)
                 return modulas, 0
         elif self.real == 0:
-            return 1, 1.5707963267948966
+            if self.imaginary > 0:
+                import math
+                modulas = math.sqrt(self.imaginary * self.imaginary)
+                return modulas, 1.5707963267948966
+            else:
+                import math
+                modulas = math.sqrt(self.imaginary * self.imaginary)
+                return modulas, -1.5707963267948966
